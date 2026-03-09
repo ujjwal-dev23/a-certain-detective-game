@@ -11,6 +11,7 @@ import "@picocss/pico";
 import { Home } from "./pages/Home/index.jsx";
 import { Test } from "./pages/Test/index.jsx";
 import { Signup } from "./pages/Signup/index.jsx";
+import { Login } from "./pages/Login/index.js";
 import { NotFound } from "./pages/_404.jsx";
 
 export function App() {
@@ -21,6 +22,7 @@ export function App() {
           <Route path="/" component={Home} />
           <Route path="/test" component={Test} />
           <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
           <Route default component={NotFound} />
         </Router>
       </main>

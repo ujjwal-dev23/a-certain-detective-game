@@ -1,11 +1,11 @@
-export function Signup() {
+export function Login() {
   return (
     <main
       class={"container"}
       style={"display: grid; place-items: center; min-height: 100vh;"}
     >
       <article>
-        <header>Sign Up</header>
+        <header>Login</header>
         <input
           type="text"
           name="username"
@@ -13,23 +13,10 @@ export function Signup() {
           aria-label="username"
         />
         <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          aria-label="Email"
-          autocomplete="email"
-        />
-        <input
           type="password"
           name="password"
           placeholder="Password"
           aria-label="Password"
-        />
-        <input
-          type="password"
-          name="confirm-password"
-          placeholder="Confirm Password"
-          aria-label="Confirm Password"
         />
         <div
           class={"container"}
@@ -37,10 +24,8 @@ export function Signup() {
             "display: flex; flex-direction:column; justify-content: center; text-align: center; align-items: center;"
           }
         >
-          Already have an account
-          <a href="/login" style={"align"}>
-            Login
-          </a>
+          Create an account
+          <a href="/signup">Sign Up</a>
         </div>
         <footer>
           <input type="button" value="Sign Up" />
