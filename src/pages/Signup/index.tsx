@@ -39,15 +39,15 @@ export function Signup() {
       passwordConfirm: confirmPassword,
     };
 
-    console.log(userData);
+    // console.log(userData);
 
     // Create a new record in the users collection
     try {
       const record = await pb.collection("users").create(userData);
       console.log(`Signed Up`);
       formElement.reset();
-    } catch (e) {
-      console.error(e.data.data);
+    } catch (err) {
+      console.error(err.data.data);
     }
   };
 
