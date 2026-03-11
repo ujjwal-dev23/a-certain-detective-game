@@ -28,7 +28,7 @@ export function Login() {
           <a href="/signup">Sign Up</a>
         </div>
         <footer>
-          <input type="button" value="Sign Up" />
+          <input type="button" value="Login" />
         </footer>
       </article>
     </main>
