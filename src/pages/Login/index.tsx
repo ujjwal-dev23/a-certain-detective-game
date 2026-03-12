@@ -2,6 +2,7 @@ import type { TargetedEvent } from "preact";
 
 import pb from "../../services/pb-client";
 
+// TODO: Add UX elements - Loading and Error/Invalid states
 export function Login() {
   const onSubmit = async (e: TargetedEvent<HTMLFormElement>) => {
     e.preventDefault();
