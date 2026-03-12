@@ -23,8 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# Testing Database
-pocketbase/
+# Testing Database Binary
+pocketbase/pocketbase
+pocketbase/pocketbase.exe
+pocketbase/CHANGELOG.md
+pocketbase/LICENSE.md
 
 # Environment Files
 .env
