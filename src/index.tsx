@@ -13,7 +13,6 @@ import { Test } from "./pages/Test/index.jsx";
 import { Signup } from "./pages/Signup/index.jsx";
 import { Login } from "./pages/Login/index.js";
 import { NotFound } from "./pages/_404.jsx";
-import { ProtectedRoute } from "./components/ProtectedRoute.js";
 
 export function App() {
   return (
@@ -21,14 +20,7 @@ export function App() {
       <main>
         <Router>
           <Route path="/" component={Home} />
-          <Route
-            path="/test"
-            component={() => (
-              <ProtectedRoute>
-                <Test />
-              </ProtectedRoute>
-            )}
-          />
+          <Route path="/test" component={Test} />
           <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route default component={NotFound} />
